@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: 'Monserrat', sans-serif;
+    padding: 0 20px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.input-element{
+    width: 60%;
+    max-width: 400px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}  
+
+.search-btn{
+    padding: 10px 20px;
+    background-color: #4caa50;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.search-btn:hover{
+    opacity: 0.9;
+}
+
+.output-image-grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.output-image-box{
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.output-image-box:hover img{
+    transform: scale(1.05);
+}
+.output-image-grid img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.output-image-box a{
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.output-image-box:hover a{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.load-more{
+    background-color: #008cda;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   display: none;
+}
+.load-more-btn{
+    display: block;
+}
+
+.load-more:hover{
+    background-color: #004c75;
+}
+
+@media (max-width: 768px) {
+    .output-image-box{
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .output-image-box{
+        width: 100%;
+    }
+    .input-form{
+        flex-direction: column;
+    }
+    .input-element{
+        margin-bottom: 20px;
+        width: 85%;
+    }
+}
+
